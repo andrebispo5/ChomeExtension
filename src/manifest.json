@@ -1,0 +1,19 @@
+{
+    "name": "MyChirps",
+    "version": "1.0",
+    "description": "Get your tiwtter feed with zero hassel",
+    "manifest_version": 2,
+    "page_action": {
+        "default_popup": "index.html"
+    },
+    "permissions": [
+        "activeTab",
+        "webNavigation"
+    ],
+    "background": {
+        "scripts": [
+            "background.js",
+            "runtime.js"
+        ]
+    }
+}
