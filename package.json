@@ -1,6 +1,6 @@
 {
-  "name": "angular-chrome-extension",
-  "version": "0.0.0",
+  "name": "mychirps",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -18,9 +18,11 @@
     "@angular/platform-browser": "~13.2.0",
     "@angular/platform-browser-dynamic": "~13.2.0",
     "@angular/router": "~13.2.0",
+    "@types/facebook-js-sdk": "^3.3.5",
     "ngx-color-picker": "^11.0.0",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
+    "twitter-api-v2": "^1.10.0",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {

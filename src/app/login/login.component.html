@@ -1,0 +1,39 @@
+<body>
+    <div> 
+        <script src="openfacebookcode.js"></script>
+        <div *ngIf="!hasUser" class="alert alert-success box-msg" role="alert"> 
+            <label>Inser this code on your facebook device auth page</label>
+            <br>
+            <h2>{{loginCode}}</h2>
+            <button id="login-btn" (click)="openFacebookPage()">Login</button>
+        </div>
+        <br>
+        <div *ngIf="isGettingToken" class="alert alert-success box-msg" role="alert"> 
+            <strong>Waitting for facebook login</strong> 
+            <div id="fountainG">
+                <div id="fountainG_1" class="fountainG"></div>
+                <div id="fountainG_2" class="fountainG"></div>
+                <div id="fountainG_3" class="fountainG"></div>
+                <div id="fountainG_4" class="fountainG"></div>
+                <div id="fountainG_5" class="fountainG"></div>
+                <div id="fountainG_6" class="fountainG"></div>
+                <div id="fountainG_7" class="fountainG"></div>
+                <div id="fountainG_8" class="fountainG"></div>
+            </div>
+        </div>
+
+        <div *ngIf="hasAccessToken" class="alert alert-success box-msg" role="alert"> 
+            <strong>Token Acquired!</strong> 
+            <br>
+            <button id="timeline-btn" (click)="loadUserData()">Load Data</button>
+        </div>
+
+        <div *ngIf="hasUser" class="alert alert-success box-msg" role="alert"> 
+            <img src="{{userImageUrl}}"  style="width:25px;height:25px;">
+            <br>
+            <strong>Hi {{userName}}</strong> 
+            <br>
+            <button id="logout-btn" (click)="logout()">Logout</button>
+        </div>
+    </div>
+</body>

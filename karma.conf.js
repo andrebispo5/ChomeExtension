@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/angular-chrome-extension'),
+      dir: require('path').join(__dirname, './coverage/mychirps'),
       subdir: '.',
       reporters: [
         { type: 'html' },

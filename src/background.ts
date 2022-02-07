@@ -5,5 +5,5 @@ chrome.runtime.onInstalled.addListener(() => {
           chrome.pageAction.show(id);
         }
       });
-    }, { url: [{ urlMatches: 'google.com' }] });
+    });
   });

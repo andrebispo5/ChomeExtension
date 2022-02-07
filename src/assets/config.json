@@ -1,0 +1,6 @@
+{
+    "facebookLoginUrl": "https://graph.facebook.com/v2.6/device/login",
+    "facebookLoginStatusUrl": "https://graph.facebook.com/v2.6/device/login_status",
+    "facebookMeUrl": "https://graph.facebook.com/v2.3/me"
+  }
+  
